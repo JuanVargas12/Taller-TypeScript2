@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series de TV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Series de TV</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Canal</th>
+                            <th>Temporadas</th>
+                        </tr>
+                    </thead>
+                    <tbody id="series"></tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <!-- Contenedor para mostrar el detalle de la serie -->
+                <div id="series-detail" class="card" style="width: 100%;">
+                    <img id="series-image" class="card-img-top" src="" alt="Imagen de la serie" />
+                    <div class="card-body">
+                        <h5 id="series-title" class="card-title"></h5>
+                        <p id="series-description" class="card-text"></p>
+                        <p>
+                            <strong>URL:</strong> 
+                            <a id="series-url" href="#" target="_blank"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./dist/serie.js"></script>
+    <script type="module" src="./dist/data.js"></script>
+    <script type="module" src="./dist/app.js"></script>
+</body>
+</html>

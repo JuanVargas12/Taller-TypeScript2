@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                      // Define la versión de ECMAScript que deseas usar
+    "module": "ES6",                      // Utiliza ESModules (compatible con los navegadores)
+    "outDir": "./dist",                   // Carpeta donde se guardarán los archivos compilados
+    "rootDir": "./src",                   // Carpeta raíz de tu código TypeScript
+    "strict": true,                       // Habilita las verificaciones estrictas
+    "esModuleInterop": true,              // Para compatibilidad con módulos ES6
+    "moduleResolution": "node",           // Resolución de módulos estilo Node.js
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
